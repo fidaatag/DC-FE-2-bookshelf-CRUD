@@ -16,53 +16,63 @@
                 </div>
             </div>
 
-            <div class="colom-2">
-                <div class="haiNama">
-                    <div class="profil"><img src="img/logoRakus.png"></div>
-                    <h2>RAKUS</h2>
-                    <p>singkatan dari - <i>Rak Buku System</i> <br><br>Aplikasi RAKUS membantu kamu menyimpan koleksi buku. Buku yang sedang dibaca ataupun yang sudah selesai dibaca dapat disimpan dengan rapi. Sistem Rakus menggunakan local storage yang tersedia di setiap browser. Jadikan Rakus tempat terbaik mengelola buku-bukumu. </p>
+            <div class="wrap-col-23">
+                <div class="colom-2">
+                    <div class="deskripsi">
+                        <div class="haiNama">
+                            <div class="prof">
+                                <h2>RAKUS</h2>
+                                <p>singkatan dari - <i>Rak Buku System</i> </p>
+                            </div>
+                            <div class="image">
+                                <img src="img/logoRakus.png">
+                            </div>
+                        </div>
+                        <p>Aplikasi RAKUS membantu kamu menyimpan koleksi buku. Buku yang sedang dibaca ataupun yang sudah selesai dibaca dapat disimpan dengan rapi. Sistem Rakus menggunakan local storage yang tersedia di setiap browser. Jadikan Rakus tempat terbaik mengelola buku-bukumu. </p>
+                    </div>
+                    <div class="interaksi">
+                        <div class="dibacaTambah">
+                            <div class="sedangDibaca"><h2>Sedang Dibaca</h2></div>
+                            <div class="tambahBuku" id="tambahBuku"><button>Tambah Buku</button></div>
+                        </div>
+                        <div class="kotakSedangDibaca">
+                            <div class="drafSedangDibaca" id="drafSedangDibaca"></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="dibacaTambah">
-                    <div class="sedangDibaca"><h2>Sedang Dibaca</h2></div>
-                    <div class="tambahBuku" id="tambahBuku"><button>Tambah Buku</button></div>
-                </div>
-                <div class="kotakSedangDibaca">
-                    <div class="drafSedangDibaca" id="drafSedangDibaca"></div>
-                </div>
+
+                <div class="colom-3">
+                    <div class="wrap-info-jmlbuku">
+                    <div class="cariFilter">
+                        <div class="cariBuku">
+                            <input id="mencariBuku" type="text" name="keyword" placeholder="Apa yang ingin kamu baca?">
+                        </div>
+                        <div class="submitCari" >
+                            <button id="btnSearch">Cari Buku</button>
+                        </div>
+                    </div>
+                    <div class="jumlahBuku">
+                        <div class="jumlahDibaca">
+                            <div class="angkajumlahDibaca"><p id="angkajumlahDibaca"></p></div>
+                            <div class="tulisanjumlahDibaca"><p>Buku <b>Sedang</b> Dibaca</p> </div>
+                        </div>
+
                 
-            </div>
+                        <div class="jumlahTerbaca">
+                            <div class="angkajumlahTerbaca"><p id="angkajumlahTerbaca"></p></div>
+                            <div class="tulisanjumlahTerbaca"><p>Buku <b>Sudah</b> Terbaca</p></div>
+                        </div>
+                
 
-            <div class="colom-3">
-                <div class="cariFilter">
-                    <div class="cariBuku">
-                        <input id="mencariBuku" type="text" name="keyword" placeholder="Apa yang ingin kamu baca?">
                     </div>
-                    <div class="submitCari" >
-                        <button id="btnSearch">Cari Buku</button>
-                    </div>
-                    <div class="filter">
-                        <a href="#"><i class="large material-icons">filter_list</i></a>
-                    </div>
-                </div>
-                <div class="jumlahBuku">
-                    <div class="jumlahDibaca">
-                        <div class="angkajumlahDibaca"><p id="angkajumlahDibaca"></p></div>
-                        <div class="tulisanjumlahDibaca"><p>Buku <b>Sedang</b> Dibaca</p> </div>
                     </div>
 
-            
-                    <div class="jumlahTerbaca">
-                        <div class="angkajumlahTerbaca"><p id="angkajumlahTerbaca"></p></div>
-                        <div class="tulisanjumlahTerbaca"><p>Buku <b>Sudah</b> Terbaca</p></div>
+                    <div class="sudahTerbaca">
+                        <h2>Sudah Terbaca</h2>
                     </div>
-            
-
-                </div>
-                <div class="sudahTerbaca">
-                    <h2>Sudah Terbaca</h2>
-                </div>
-                <div class="kotakSudahTerbaca">
-                    <div class="drafSudahTerbaca" id="drafSudahTerbaca"></div>
+                    <div class="kotakSudahTerbaca">
+                        <div class="drafSudahTerbaca" id="drafSudahTerbaca"></div>
+                    </div>
                 </div>
             </div>
         </div>

@@ -1,31 +1,37 @@
 body {
     margin: 0;
+    
 }
 
 /* membagi layout jadi 3 bagian*/
 .container {
     display: flex;
+    width: 100%;
 }
 
 .colom-1 {
     width: 5%;
+    background-color: black;
+}
+
+.wrap-col-23 {
+    display: flex;
 }
 
 .colom-2 {
-
     width: 60%;
-    margin: 5px;
+    margin: 30px 5%;
 }
 
 .colom-3 {
     width: 35%;
-    margin: 5px;
+    margin: 5px 5% 5px 5px;
 }
 
 /* colom 1 : navbar */
 .menuSamping {
     background-color: rgb(0, 0, 0);
-    height: 200%;
+    height: 100vh;
     width: 50px; 
     padding-top: 100%;
 }
@@ -35,40 +41,48 @@ body {
     display: block;
     line-height: 60px;
     padding-left: 15px;
-    margin-top: 1000%;
 }
 .menuSamping a:hover{
     background: antiquewhite;
     color: rgb(0, 0, 0);
 }
 
-/* colom 2 : haiNama, dibaca, add, draf */
+/* colom 2 : deskripsi profile, dibaca, add, draf */
+
+.deskripsi {
+    background-color: antiquewhite;
+    border-radius: 15px;
+    padding: 10px 25px; 
+}
 
 /* haiNama*/
 .haiNama {
-    background-color: antiquewhite;
-    height: 30%;
-    border-radius: 15px;  
-    padding: 25px; 
+    display: flex;
 }
-.haiNama img {
-    position: absolute;
-    width: 230px;
-    left: 45%;
-    margin-top: -30px;
+
+.haiNama .prof {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.image {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+.image img {
+    width: 50%;
 }
 .haiNama h2 {
     font-size: 50px;
     margin: 2px;
 }
-.haiNama p {
-    width: 70%;
-    margin-left: 2px;
-}
+
 
 /* dibaca+Tambah */
 .dibacaTambah {
-    
     display: flex;
     margin-top: 5px;
 }
@@ -92,8 +106,7 @@ body {
 
 /* draf di baca */
 .kotakSedangDibaca {
-    position: absolute;
-    width: 59%;
+    width: 100%;
 
 }
 
@@ -114,7 +127,7 @@ body {
     margin: 20px;
 }
 .kotakSedangDibaca .detailBuku {
-    width: 70%;
+    width: 100%;
     margin-top: 30px;
 }
 .kotakSedangDibaca.detailBuku h3 {
@@ -124,22 +137,34 @@ body {
     margin-bottom: 0;   
 }
 
+.btnSedangdibaca, .btnSudahterbaca {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+    margin: 5%;
+}
+
 .kotakSedangDibaca .boxTampilanBuku button {
-    width: 100px;
+    width: 100%;
     height: 20px;
-    margin-top: 90px;
-    margin-right: 20px;
+    margin-top: 10%;
 }
 
 
 /* colom 3 : cari, jumlah, draf terbaca */
 
 /* cari */
+.wrap-info-jmlbuku {
+    padding: 30px 0 0 0; 
+}
+
 .cariFilter {
     display: flex;
+    flex-direction: column;
 }
 .cariBuku {
-    width: 75%;
+    margin-bottom: 10px;
 }
 .cariBuku input {
     height: 25px;
@@ -149,12 +174,10 @@ body {
 }
 
 /* tombol cari */
-.submitCari {
-    width: 20%;
-}
 .submitCari button {
     width: 100%;
     height: 100%;
+    padding: 4px;
     font-size: 13px;
     border-radius: 12px;
     background: rgb(0, 0, 0);
@@ -172,9 +195,7 @@ body {
 
 /* papan score */
 .jumlahBuku {
-    display: flex;
-    height: 35%;
-    
+    display: flex;    
 }
 .jumlahDibaca, 
 .jumlahTerbaca {
@@ -207,9 +228,9 @@ body {
 }
 /* draf Terbaca */
 .kotakSudahTerbaca {
-    position:absolute;
-    width: 33%;
-    margin-left: 10px;
+    /* position:absolute; */
+    width: 100%;
+    /* margin-left: 10px; */
 }
 /*tambahan dari JS */
 .kotakSudahTerbaca .boxTampilanBuku {
@@ -240,9 +261,9 @@ body {
 }
 
 .kotakSudahTerbaca .boxTampilanBuku button {
-    width: 100px;
+    width: 100%;
     height: 20px;
-    margin-top: 60px;
+    margin-top: 5%;
     margin-right: 10px;
 }
 
@@ -252,7 +273,7 @@ body {
 .popUp_EditBuku {
     width: 100%;
     height: 100%; 
-    visibility: hidden;   
+    visibility: hidden;
 }
 .popUpContainer.active,
 .popUp_EditBuku.active{
@@ -262,10 +283,13 @@ body {
 .popUp_EditBuku_box {
     position: fixed;
     background-color: rgb(250,235,215,0.95);
-    border-radius: 10px;
     width: 100%;
     height: 110%;
-    margin-top: -50%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
 }
 
 .popUptambahBuku h2,
